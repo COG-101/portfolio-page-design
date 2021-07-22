@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" type="text/css"> 
+        <script src="scripts\contactFormValidation.js" type="text/javascript" defer></script>
+        <title>Connor Gordon</title>
+        <link rel="icon" href="img/favicon.png" type="image/img">
+    </head>
+
+
+
+
+
+    <body>
+        <div class="above-the-fold">
+            <header>
+                <p id="logo">&lt;/CONNOR GORDON&gt;</p>
+
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+                
+                <a class="contact-cta" href="#contact">
+                    <button>Contact</button>
+                </a>
+            </header>
+
+            <section class="hero-section">
+                <div class="hero-container">
+                    <div class="hero-text">
+                        <h1>
+                            Can I code? maybe.
+                            <br>
+                            Can I copy + Paste?
+                            <br>
+                            <span class="hero-underline">Certainly.</span>
+                        </h1>
+
+                        <a class="contact-cta" href="#contact">
+                            <button>Send a message</button>
+                        </a>
+                    </div>
+                    <img class="hero-image" src="img/hero-image.png" alt="Illustration of laptop & phone">
+                </div>
+            </section>
+            <img class="scroll-signifier" src="img/down-arrow.png" alt="scroll down icon">
+        </div>
+
+
+
+
+
+        <section class="portfolio" id="portfolio">
+            <h2 class="portfolio-title">Portfolio</h2>
+            <div class="project-cards">
+
+
+                <div class="card-1">
+                    <h3>Vehicle Manager</h3>
+                    <p>
+                        A vehicle management program written for a hire company using an object-oriented approach. Functionality includes inventory management, vehicle hire & return and robust error handling.
+                        <br><br>
+                        Tools:
+                    </p>
+
+                    <div class="card-1-icons">
+                        <img src="img/python-logo.png" alt="python logo">
+                    </div>
+
+                    <div class="github-button-container">
+                        <a href="https://github.com/" target="_blank">
+                            <button class="github-button">View</button>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="card-2">
+                    <h3>HFI Analysis</h3>
+                    <p>
+                        Data interrogation of the Human Freedom Index using the pandas library. Notable indices of analysis include the homicide index and a trend analysis of the religious freedom's and women's indices.
+                        <br><br>
+                        Tools:
+                    </p>
+                    
+                    <div class="card-2-icons">
+                        <img src="img/python-logo.png" alt="python logo">
+                        <img src="img/pandas-logo.png" alt="pandas logo">
+                    </div>  
+
+                    <div class="github-button-container">
+                        <a href="https://github.com/" target="_blank">
+                            <button class="github-button">View</button>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="card-3">
+                    <h3>Candle Shop Catalogue</h3>
+                    <p>
+                        Written incrementally via test driven development, this application functions as a commerce catalogue management tool allowing tracking of unique products and their characteristics.
+                        <br><br>
+                        Tools:
+                    </p>
+
+                    <div class="card-3-icons">
+                        <img src="img/python-logo.png" alt="python logo">
+                        <img class="pytest" src="img/pytest-logo.png" alt="pytest logo">
+                    </div> 
+                    
+                    <div class="github-button-container">
+                        <a href="https://github.com/" target="_blank">
+                            <button class="github-button">View</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="about-section" id="about">
+            <h2 class="about-title">About</h2>
+            <div class="about-container">
+                <img class="about-image" src="img/about-image.png" alt="Illustration of a programmer">
+                <div>
+                    <p>
+                        I had my first experience with code as a youngster working away on 
+                        The family computer building Pokémon fan sites for me and my 
+                        Friends. In my teens I progressed to attempting to write scripts to 
+                        Create mods for my pc games until being promptly banned for my 
+                        Efforts.
+                        <br>
+                        <br>
+                        After a decade & a half of studying and working in economics I was 
+                        Unhappy with the way things were going and decided to revisit and 
+                        Reskill my programming. I'm currently on an extended sabbatical 
+                        From my career whilst I work on advancing my programming skills 
+                        Though a bootcamp.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <div class="bottom-image">
+            <section class="contact-section" id="contact">
+                <h2 class="about-title">Contact</h2>
+                <div class="contact-container">
+
+                    <p id="error-message"></p>
+
+                    <form id="contact-form" onsubmit="return formValidation()"> 
+
+                        <label for="name">Name*</label>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <input type="text" name="first-name" id="first-name">
+                                <label for="first-name">First Name</label>
+                            </div>
+                            
+                            <div class="input-group">
+                                <input type="text" name="last-name" id="last-name">
+                                <label for="last-name">Last Name</label>
+                            </div>
+                        </div>
+
+                        <label for="email">Email Address*</label>
+                        <input type="text" name="email" id="email">
+
+                        <label for="subject">Subject*</label>
+                        <input type="text" name="subject" id="subject">
+
+                        <label for="message">Message*</label>
+                        <textarea id="message" name="message" rows="6" cols="50" style="resize: none;"></textarea>
+
+                        <input type="submit" value="Send">
+
+
+                    </form>
+
+
+
+                </div>
+            </section>
+
+
+
+            <footer>
+                <div class="border">
+                </div>
+
+                <ul class="footer-links underline">
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="social-links">
+                    <a href="https://github.com/" target="_blank">
+                        <img src="img/github-logo.png" alt="GitHub icon">
+                    </a>
+                    <a href="https://uk.linkedin.com/" target="_blank">
+                        <img src="img/linkedin-logo.png" alt="LinkedIn icon">
+                    </a>
+                    <a href="https://www.reddit.com/" target="_blank">
+                        <img src="img/reddit-logo.png" alt="Reddit icon">
+                    </a>
+                </div>
+
+                <div class="copyright">
+                    <p>©2021 Connor Gordon</p>
+                </div>
+            </footer>
+        </div>
+
+
+    </body>
+</html>
