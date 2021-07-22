@@ -1,2 +1,3 @@
 # Portfolio Page Design
-A single page template portfolio for a ficticious junior web developer. Background assets and hi-fi wireframes created using Adobe XD. Additional illustrations sourced via (https://undraw.co/illustrations)
+A single page template portfolio for a ficticious junior web developer. Background assets and hi-fi wireframes created using Adobe XD.
+*Additional illustrations sourced via (https://undraw.co/illustrations)*
