@@ -209,7 +209,7 @@ header a {
     background-color: #414243;
     min-height: 518px;
     width: 430px;
-    transition: transform .2s;
+    transition-duration: .1s;
 }
 
 .card-1:hover, .card-2:hover, .card-3:hover {
